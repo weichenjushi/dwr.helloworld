@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Ajax Table Update</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
+    <script type='text/javascript' src='/hello/dwr/engine.js'></script>
+    <script type='text/javascript' src='/hello/dwr/interface/SendData.js'></script>
+    <script type='text/javascript' src='/hello/dwr/util.js'></script>
+    <script>
+        window.onload = function () {
+            dwr.engine.setActiveReverseAjax(true);
+            dwr.engine.setErrorHandler(errorHandler);
+            dwr.engine.setNotifyServerOnPageUnload(true);
+            SendData.addAttributeToScriptSession();
+        }
+        function errorHandler(message, ex) {
+            dwr.util
+                    .setValue(
+                    "error",
+                    "<font color='red'>Cannot connect to server. Initializing retry logic.</font>",
+                    {
+                        escapeHtml: false
+                    });
+            setTimeout(function () {
+                dwr.util.setValue("error", "");
+            }, 5000)
+        }
+    </script>
+</head>
+<body>
+<h3 id="content"></h3>
+</body>
+</html>
