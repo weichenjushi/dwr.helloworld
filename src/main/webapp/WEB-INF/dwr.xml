@@ -13,16 +13,9 @@
             <param name="class" value="com.dwr.HelloWorld"></param>
         </create>
 
-        <!-- people -->
-        <!-- <create creator="new" javascript="People" scope="script">
-           <param name="class" value="org.getahead.dwrdemo.people.People"/>
-         </create>-->
-
-
-        <!--<convert match="org.getahead.dwrdemo.people.Person" javascript="Person" converter="bean"/>-->
-        <!-- <create creator="new" javascript="Demo">
-          <param name="class" value="your.java.Bean"/>
-        </create> -->
-
+        <create creator="new" javascript="SendData">
+            <param name="class" value="com.dwr.SendData"></param>
+            <include method="sendData"></include>
+        </create>
     </allow>
 </dwr>

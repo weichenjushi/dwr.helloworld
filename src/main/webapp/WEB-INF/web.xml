@@ -22,6 +22,11 @@
             <param-name>allowScriptTagRemoting</param-name>
             <param-value>true</param-value>
         </init-param>
+        <!--pollAndCometEnabled是指dwr 的reverse ajax是使用polling 和comet的方式-->
+        <init-param>
+            <param-name>pollAndCometEnabled </param-name>
+            <param-value>true</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>dwr-invoker</servlet-name>

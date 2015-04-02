@@ -7,11 +7,8 @@
           <element id="module-output" name="dwr.helloworld" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.directwebremoting:dwr:3.0.M1" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:cometd:6.1.4" />
-          <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.4" />
+          <element id="library" level="project" name="Maven: org.directwebremoting:dwr:3.0.0-rc3-RELEASE" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
